@@ -15,6 +15,9 @@ target_compile_options(util PRIVATE
   ${flags}
   )
 
+# set(CMAKE_CXX_STANDARD 11)
+# set(CMAKE_CXX_EXTENSIONS OFF)
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set_target_properties(util PROPERTIES
   CXX_STANDARD 14
   CXX_EXTENSIONS OFF

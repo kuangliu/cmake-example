@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
-project(if-condition LANGUAGES CXX)
+project(option LANGUAGES CXX)
 
-set(BUILD_LIBRARY ON)
+# set(BUILD_LIBRARY ON)
+option(BUILD_LIBRARY "Turn on with: cmake -D BUILD_LIBRARY=ON .." OFF)
 message(STATUS "Build library: ${BUILD_LIBRARY}")
 
 list(APPEND SRC util.h util.cc)
